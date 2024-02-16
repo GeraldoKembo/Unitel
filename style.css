@@ -1,0 +1,29 @@
+   
+h1{
+    background-color: black;
+    color: whitesmoke;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    font-size: 20px;
+}
+
+button{
+    background-color: rgb(196, 207, 255);
+    border: none;
+    width: 100px;
+    height: 25px;
+    font-size: 20px;
+    border-radius: 10px;
+  
+}
+
+*{
+    background-image: url("./avioes/R.png");
+    
+    
+   
+}
