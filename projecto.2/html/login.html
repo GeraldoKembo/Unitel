@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+  <meta charset="UTF-8"> 
+  <title>LOGIN</title>
+   <link rel="stylesheet" href="/css/stylelog.css">   
+   
+</head>
+
+<body >
+<section class="area_login">
+    <div class="login">
+        <div class="imglogin">
+<img src="/img/login.png">
+        </div>
+        <h1>LOGIN</h1>
+
+            <form id="meuFormulario" method="post" >
+            <input type="text" nome="Nome" placeholder="Nome de Usuário" autofocus>
+            <input type="password" nome="Password" placeholder="Password" autofocus>
+            <input type="submit" value="Entrar" >
+            </form>
+      
+
+
+    <p>Ainda não tem uma conta?<a href="/html/cadatramento.html">Criar uma conta</a></p> 
+    </div>
+ </section>
+
+ <script>
+    document.getElementById("meuFormulario").addEventListener("submit", function(event) {
+        event.preventDefault(); // Impede o envio padrão do formulário
+        window.location.href = "/html/index.html"; // Redireciona para a URL desejada
+    });
+</script>
+</body>
+</html>
