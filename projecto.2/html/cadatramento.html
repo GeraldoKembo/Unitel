@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+  <meta charset="UTF-8"> 
+  <title>CADASTRAMENTO</title>
+   <link rel="stylesheet" href="/css/stylecadas.css">   
+   
+</head>
+
+<body >
+<section class="area_cadastro">
+    <div class="cadastro">
+        <div class="imgcadastro">
+<img src="/img/conta.png">
+        </div>
+        <h1>CADASTRAR EMPRESA</h1>
+  
+        <form id="meuFormulario" method="post">
+            <input type="text" name="Nome" placeholder="Nome de Usuário" autofocus>
+            <input type="text" name="Empresa" placeholder="Nome da Empresa">
+            <input type="text" name="Ramo de Atuação" placeholder="Ramo de Atuação">
+            <input type="email" name="Email" placeholder="Email">
+            <input type="number" name="NIF" placeholder="NIF">
+            <input type="password" name="Password" placeholder="Password">
+            <input type="submit" value="Cadastrar">
+        </form>
+  
+        <p>Já tem uma conta?<a href="/html/login.html">Login</a></p>
+    </div>
+ </section>
+
+ <script>
+    document.getElementById("meuFormulario").addEventListener("submit", function(event) {
+        event.preventDefault(); // Impede o envio padrão do formulário
+        window.location.href = "/html/index.html"; // Redireciona para a URL desejada
+    });
+</script>
+</body>
+</html>
