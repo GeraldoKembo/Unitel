@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+    <head>        
+        
+
+        
+
+
+       <meta charset="UTF-8">
+        <title>iSolutions</title>
+        <link rel="stylesheet" href="/css/style2.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+<body>
+
+    <!--Cabeçalho-->
+    <header class="header">
+<a href="#" class="logo">iSolutions.</a>
+
+<nav class="navbar">
+    <a href="/html/index.html" class="ativo">Home</a>
+    <div class="servicos">
+     <a href="" >Serviços</a>
+     <div class="servicos-content">
+        <a href="/html/consultoria.html" color="#555" >Consultoria Estratégica e Financeira</a>
+      </div>
+    </div>
+
+    <a href="/html/sobre.html">Sobre </a>
+</nav>
+    </header>
+
+    <!--Contéudo do home-->
+    <section class="home">
+        <div class="home-content">
+            <div class="home-content">
+                <!-- Outro conteúdo da home aqui -->
+                
+                <div class="newsletter">
+                    <h3>Subscreva a nossa Newsletter e esteja a par de todas as nossa novidade!</h3>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Seu e-mail" required>
+                        <button type="submit">Inscrever-se</button>
+                    </form>
+                </div>
+            </div>
+    </div>
+
+    </section>
+
+<div class="container">
+
+    <div class="empresa">
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="/img/cresca.jpg" style="width:100%">
+                <div class="text">Cresça ao ritmo do Mercado</div>
+            </div>
+    
+            <div class="mySlides">
+                <img src="/img/financeira.png" style="width:100%">
+                <div class="text">Melhore as suas Finanças</div>
+            </div>
+    
+            <div class="mySlides">
+                <img src="/img/ideas.jpg" style="width:100%">
+                <div class="text">Cuide das suas Estratégias</div>
+            </div>
+    
+            <!-- Adicione mais slides conforme necessário -->
+    
+            <!-- Botões de próxima e anterior -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <div class="conteudo">
+        <h2>Sobre Nossa Consultoria</h2>
+        <p>Somos uma consultoria empresarial especializada em ajudar empresas de todos os tamanhos a atingir seus objetivos de negócio.</p>
+        
+        <h3>Nossa Missão</h3>
+        <p>Nossa missão é fornecer soluções estratégicas e práticas para os desafios enfrentados por nossos clientes, ajudando-os a prosperar e a alcançar o sucesso sustentável.</p>
+    
+        <h3>Nossa Equipe</h3>
+        <p>Nossa equipe é composta por profissionais altamente qualificados e experientes, apaixonados por resolver problemas empresariais complexos e impulsionar o crescimento dos negócios.</p>
+    
+        <h3>Nossa Experiência</h3>
+        <p>Com anos de experiência no setor, já ajudamos empresas em diversas áreas, incluindo estratégia empresarial, gestão financeira, marketing e desenvolvimento de liderança.</p>
+    
+        <h3>Nossos Valores</h3>
+        <p>Nosso trabalho é pautado pela integridade, excelência, colaboração e comprometimento com os melhores interesses de nossos clientes.</p>
+    </div>
+    
+</div>
+
+<footer class="rodape">
+    <div class="contact">
+        <h3>Entre em Contato</h3>
+        <p><i class='bx bx-mail-send'></i> Email: info@isolutions.com</p>
+        <p><i class='bx bx-phone'></i> Telefone: +123456789</p>
+    </div>
+    
+    <div class="copyrath">
+        <p>&copy; 2024 iSolutions. Todos os direitos reservados.</p>
+    </div>
+
+    <div class="icones">
+        <h3>Siga-nos</h3>
+        <ul>
+            <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+            <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+            <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+            <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
+        </ul>
+    </div>
+
+    <!-- Mapa incorporado (substitua com o seu código de incorporação) -->
+    <div class="mapa">
+        <!-- Substitua a URL do mapa com o seu código de incorporação -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.765787785369!2d-0.14036208422865986!3d51.50122997963478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b0e73cf6d9%3A0x47c660740e09a65!2sBuckingham%20Palace!5e0!3m2!1sen!2suk!4v1635255710644!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</footer>
+   
+
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        if (slides.length == 0) {
+            console.error("Nenhum slide encontrado.");
+            return;
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { 
+            slideIndex = 1;
+        }
+        if (slideIndex < 1) {
+            slideIndex = slides.length;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000); // Muda a cada 5 segundos
+    }
+</script>
+</body>
+</html>
